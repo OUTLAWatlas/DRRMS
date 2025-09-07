@@ -50,8 +50,6 @@ Support scalable, secure, and offline-capable infrastructure for real-world depl
 
 📍 Geospatial Mapping – Heatmaps for demand, supply & disaster zones
 
-🛰️ Drone/IoT Integration – Real-time supply tracking & deployment
-
 **🏗️ Software Architecture**
 
 The system follows a modular, service-oriented architecture with clear separation of concerns.
