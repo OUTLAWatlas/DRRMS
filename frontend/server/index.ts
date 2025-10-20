@@ -2,6 +2,8 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
+import authRoutes from './routes/auth';
+import reportRoutes from './routes/reports';
 
 export function createServer() {
   const app = express();
@@ -18,6 +20,8 @@ export function createServer() {
   });
 
   app.get("/api/demo", handleDemo);
+  app.use('/api/auth', authRoutes);
+  app.use('/api/reports', reportRoutes);
 
   return app;
 }
