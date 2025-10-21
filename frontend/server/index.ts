@@ -4,6 +4,8 @@ import cors from "cors";
 import { handleDemo } from "./routes/demo";
 import authRoutes from './routes/auth';
 import reportRoutes from './routes/reports';
+import rescueRequestRoutes from './routes/rescueRequests';
+import warehouseRoutes from './routes/warehouses';
 
 export function createServer() {
   const app = express();
@@ -22,6 +24,8 @@ export function createServer() {
   app.get("/api/demo", handleDemo);
   app.use('/api/auth', authRoutes);
   app.use('/api/reports', reportRoutes);
+  app.use('/api/rescue-requests', rescueRequestRoutes);
+  app.use('/api/warehouses', warehouseRoutes);
 
   return app;
 }

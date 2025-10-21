@@ -4,7 +4,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { db } from '../db';
 import { users } from '../db/schema';
-import { loginSchema, registerSchema } from '@shared/api';
+import { loginSchema, registerSchema } from '../../shared/api.ts';
 import { eq } from 'drizzle-orm';
 
 const router = Router();
